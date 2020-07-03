@@ -37,22 +37,21 @@ const Title = styled.h1`
   // margin-bottom: ${rhythm(0.5)};
 `
 
-function Tagline({ children }) {
-  return (
-    <div
+const Tagline = ({ children }) => (
+  <div
+    css={css`
+      margin-bottom: ${rhythm(1)};
+    `}
+  >
+    <em
       css={css`
-        margin-bottom: ${rhythm(1)};
+        font-size: 0.9em;
       `}
     >
-      <em
-        css={css`
-          font-size: 0.9em;
-        `}
-      >
-        {children}
-      </em>
-    </div>
-  )
+      {children}
+    </em>
+  </div>
+)
 }
 
 const Body = styled.div`
