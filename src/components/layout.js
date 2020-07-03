@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography"
 import headerImg from "../img/zach.jpg"
 
 const HeaderLg = props => {
-  const Wrap = styled.div`
+  const Container = styled.div`
     text-align: center;
     margin-bottom: ${rhythm(2)};
     position: sticky;
@@ -16,14 +16,14 @@ const HeaderLg = props => {
     background-color: #fff;
   `
   return (
-    <Wrap>
+    <Container>
       <Link to={"/"}>
         <HeaderImg src={headerImg} />
         <Title>{props.author}</Title>
       </Link>
       <Tagline>{props.description}</Tagline>
       <hr />
-    </Wrap>
+    </Container>
   )
 }
 
