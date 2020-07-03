@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "colbertz-web-resume",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Online resume site for Zach Colbert",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
