@@ -6,24 +6,43 @@ import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 import headerImg from "../img/zach.jpg"
 
+const HeaderContainer = styled.div`
+  margin-bottom: ${rhythm(2)};
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+`
+
+const HeaderSm = props => {
+  const contStyle = css`
+    text-align: left;
+    padding-top: 1px;
+  `
+
+  return (
+    <HeaderContainer css={contStyle}>
+      <Link to={"/"}>
+        <Title>{props.author}</Title>
+      </Link>
+      <hr />
+    </HeaderContainer>
+  )
+}
+
 const HeaderLg = props => {
-  const Container = styled.div`
+  const hstyle = css`
     text-align: center;
-    margin-bottom: ${rhythm(2)};
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #fff;
   `
   return (
-    <Container>
+    <HeaderContainer css={hstyle}>
       <Link to={"/"}>
         <HeaderImg src={headerImg} />
         <Title>{props.author}</Title>
       </Link>
       <Tagline>{props.description}</Tagline>
       <hr />
-    </Container>
+    </HeaderContainer>
   )
 }
 
@@ -97,7 +116,12 @@ export default ({ children }) => {
       {/* Site Body */}
       <div>
         {/* Site Header */}
-        <HeaderLg
+        {/* <HeaderLg
+          author={data.site.siteMetadata.author}
+          description={data.site.siteMetadata.description}
+        /> */}
+
+        <HeaderSm
           author={data.site.siteMetadata.author}
           description={data.site.siteMetadata.description}
         />
