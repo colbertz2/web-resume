@@ -56,6 +56,7 @@ export default ({ children }) => {
           body {
             margin: auto;
             width: 60%;
+            max-width: 750px;
           }
         `}
       />
