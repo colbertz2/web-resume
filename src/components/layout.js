@@ -6,14 +6,26 @@ import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 import headerImg from "../img/zach.jpg"
 
-const HeaderLg = styled.div`
-  text-align: center;
-  margin-bottom: ${rhythm(2)};
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #fff;
-`
+const HeaderLg = props => {
+  const Wrap = styled.div`
+    text-align: center;
+    margin-bottom: ${rhythm(2)};
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+  `
+  return (
+    <Wrap>
+      <Link to={"/"}>
+        <HeaderImg src={headerImg} />
+        <Title>{props.author}</Title>
+      </Link>
+      <Tagline>{props.description}</Tagline>
+      <hr />
+    </Wrap>
+  )
+}
 
 const HeaderImg = props => (
   <div>
@@ -52,7 +64,6 @@ const Tagline = ({ children }) => (
     </em>
   </div>
 )
-}
 
 const Body = styled.div`
   margin: auto;
@@ -65,6 +76,7 @@ export default ({ children }) => {
       site {
         siteMetadata {
           author
+          description
         }
       }
     }
@@ -85,14 +97,10 @@ export default ({ children }) => {
       {/* Site Body */}
       <div>
         {/* Site Header */}
-        <HeaderLg>
-          <Link to={"/"}>
-            <HeaderImg src={headerImg} alt="zach.jpg" />
-            <Title>{data.site.siteMetadata.author}</Title>
-          </Link>
-          <Tagline>Zach is a guy looking for a job.</Tagline>
-          <hr />
-        </HeaderLg>
+        <HeaderLg
+          author={data.site.siteMetadata.author}
+          description={data.site.siteMetadata.description}
+        />
 
         {/* Page Content */}
         <Body>{children}</Body>
