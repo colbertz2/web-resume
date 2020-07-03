@@ -8,7 +8,7 @@ import headerImg from "../img/zach.jpg"
 
 const Header = styled.div`
   text-align: center;
-  margin-bottom: ${rhythm(1)};
+  margin-bottom: ${rhythm(2)};
 `
 
 const HeaderImg = props => (
@@ -33,8 +33,27 @@ const Title = styled.h1`
   // margin-bottom: ${rhythm(0.5)};
 `
 
-const Tagline = styled.em`
-  font-size: 0.9em;
+function Tagline({ children }) {
+  return (
+    <div
+      css={css`
+        margin-bottom: ${rhythm(1)};
+      `}
+    >
+      <em
+        css={css`
+          font-size: 0.9em;
+        `}
+      >
+        {children}
+      </em>
+    </div>
+  )
+}
+
+const Body = styled.div`
+  margin: auto;
+  width: 90%;
 `
 
 export default ({ children }) => {
@@ -55,7 +74,7 @@ export default ({ children }) => {
         styles={css`
           body {
             margin: auto;
-            width: 60%;
+            width: 70%;
             max-width: 750px;
           }
         `}
@@ -69,11 +88,11 @@ export default ({ children }) => {
             <Title>{data.site.siteMetadata.author}</Title>
           </Link>
           <Tagline>Zach is a guy looking for a job.</Tagline>
+          <hr />
         </Header>
-        <hr />
 
         {/* Page Content */}
-        {children}
+        <Body>{children}</Body>
       </div>
     </div>
   )
