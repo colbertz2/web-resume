@@ -6,9 +6,13 @@ import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 import headerImg from "../img/zach.jpg"
 
-const Header = styled.div`
+const HeaderLg = styled.div`
   text-align: center;
   margin-bottom: ${rhythm(2)};
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
 `
 
 const HeaderImg = props => (
@@ -82,14 +86,14 @@ export default ({ children }) => {
       {/* Site Body */}
       <div>
         {/* Site Header */}
-        <Header>
+        <HeaderLg>
           <Link to={"/"}>
             <HeaderImg src={headerImg} alt="zach.jpg" />
             <Title>{data.site.siteMetadata.author}</Title>
           </Link>
           <Tagline>Zach is a guy looking for a job.</Tagline>
           <hr />
-        </Header>
+        </HeaderLg>
 
         {/* Page Content */}
         <Body>{children}</Body>
