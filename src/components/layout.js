@@ -89,6 +89,39 @@ const Body = styled.div`
   width: 90%;
 `
 
+class Header extends React.Component {
+  state = {
+    isTop: true,
+  }
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 100
+      if (isTop !== this.state.isTop) {
+        this.ListeningStateChangedEvent({ isTop })
+      }
+    })
+  }
+
+  render() {
+    if (this.state.isTop) {
+      return (
+        <HeaderLg
+          author={this.props.author}
+          description={this.props.description}
+        />
+      )
+    } else {
+      return (
+        <HeaderSm
+          author={this.props.author}
+          description={this.props.description}
+        />
+      )
+    }
+  }
+}
+
 export default ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -116,12 +149,7 @@ export default ({ children }) => {
       {/* Site Body */}
       <div>
         {/* Site Header */}
-        {/* <HeaderLg
-          author={data.site.siteMetadata.author}
-          description={data.site.siteMetadata.description}
-        /> */}
-
-        <HeaderSm
+        <Header
           author={data.site.siteMetadata.author}
           description={data.site.siteMetadata.description}
         />
