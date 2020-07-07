@@ -147,6 +147,7 @@ export default ({ children }) => {
             margin: auto;
             width: 70%;
             max-width: 750px;
+            padding-bottom: ${rhythm(1)};
           }
         `}
       />
