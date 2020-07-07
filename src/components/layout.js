@@ -5,6 +5,7 @@ import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 import headerImg from "../img/zach.jpg"
+var _ = require("lodash")
 
 const HeaderContainer = styled.div`
   margin-bottom: ${rhythm(2)};
@@ -95,12 +96,15 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 100
-      if (isTop !== this.state.isTop) {
-        this.ListeningStateChangedEvent({ isTop })
-      }
-    })
+    document.addEventListener(
+      "scroll",
+      _.throttle(() => {
+        const isTop = window.scrollY == 0
+        if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+        }
+      }, 100)
+    )
   }
 
   render() {
