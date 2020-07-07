@@ -5,6 +5,7 @@ import { Global, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 import headerImg from "../img/zach.jpg"
+import { SocialIconSm, SocialIconLg } from "../components/social-icon"
 var _ = require("lodash")
 
 const HeaderContainer = styled.div`
@@ -24,8 +25,17 @@ const HeaderSm = props => {
   return (
     <HeaderContainer css={contStyle}>
       <Link to={"/"}>
-        <Title>{props.author}</Title>
+        <Title
+          css={css`
+            display: inline-block;
+          `}
+        >
+          {props.author}
+        </Title>
       </Link>
+      <SocialIconSm url="https://github.com/colbertz2" />
+      <SocialIconSm url="https://www.linkedin.com/in/zach-colbert" />
+      <SocialIconSm url="https://twitter.com/zach_colbert" />
       <hr />
     </HeaderContainer>
   )
@@ -42,6 +52,9 @@ const HeaderLg = props => {
         <Title>{props.author}</Title>
       </Link>
       <Tagline>{props.description}</Tagline>
+      <SocialIconLg url="https://twitter.com/zach_colbert" />
+      <SocialIconLg url="https://www.linkedin.com/in/zach-colbert" />
+      <SocialIconLg url="https://github.com/colbertz2" />
       <hr />
     </HeaderContainer>
   )
@@ -148,6 +161,10 @@ export default ({ children }) => {
             width: 70%;
             max-width: 750px;
             padding-bottom: ${rhythm(1)};
+          }
+
+          a {
+            background-image: none;
           }
         `}
       />
