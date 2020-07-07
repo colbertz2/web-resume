@@ -77,7 +77,7 @@ const Tagline = ({ children }) => (
   >
     <em
       css={css`
-        font-size: 0.9em;
+        font-size: 1em;
       `}
     >
       {children}
