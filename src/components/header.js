@@ -4,15 +4,17 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import { rhythm } from "../utils/typography"
 
+import Title from "./title"
 import headerImg from "../img/zach.jpg"
-import { SocialIconSm, SocialIconLg } from "../components/social-icon"
-var _ = require("lodash")
+import { SocialIconLg } from "../components/social-icon"
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   margin-bottom: ${rhythm(2)};
   top: 0;
-  background-color: #fff;
   text-align: center;
+  background-color: #fff;
+  z-index: 100;
+  padding-top: 1px;
 `
 
 const HeaderImg = props => (
@@ -32,10 +34,6 @@ const HeaderImg = props => (
   </div>
 )
 
-const Title = styled.h1`
-  margin: ${rhythm(0.5)};
-`
-
 const Tagline = ({ children }) => (
   <div
     css={css`
@@ -53,12 +51,6 @@ const Tagline = ({ children }) => (
 )
 
 class Header extends React.Component {
-  state = {
-    isTop: true,
-  }
-
-  componentDidMount() {}
-
   render() {
     return (
       <HeaderContainer>
