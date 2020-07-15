@@ -7,7 +7,8 @@
 module.exports = {
   siteMetadata: {
     author: "Zach Colbert",
-    description: "Zach is a guy looking for a job.",
+    description:
+      "Searching for careers in security, software engineering, and enterprise IT.",
   },
   plugins: [
     {
