@@ -1,83 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import { css } from "@emotion/core"
-import styled from "@emotion/styled"
-import { rhythm } from "../utils/typography"
+
 import Layout from "../components/layout"
-
-const Pad = styled.div`
-  padding-left: 15px;
-`
-
-const Section = props => (
-  <div>
-    <h2>{props.title}</h2>
-    <Pad>{props.children}</Pad>
-    <hr />
-  </div>
-)
-
-const Subsection = props => {
-  const SubHeader = styled.h3`
-    margin-top: 0;
-    margin-bottom: ${rhythm(0.25)};
-  `
-
-  return (
-    <div
-      css={css`
-        margin-bottom: ${rhythm(1.5)};
-      `}
-    >
-      <div
-        css={css`
-          margin-bottom: ${rhythm(0.5)};
-        `}
-      >
-        <SubHeader>{props.title}</SubHeader>
-        <em>{props.subtitle}</em>
-      </div>
-      <Pad>{props.children}</Pad>
-    </div>
-  )
-}
-
-const Work = props => {
-  var subtitle = ``
-  if (props.company) {
-    subtitle = `${props.start} \u2014 ${props.end} | ${props.company}`
-  } else {
-    subtitle = `${props.start} \u2014 ${props.end}`
-  }
-
-  return (
-    <Subsection title={props.title} subtitle={subtitle}>
-      {props.children}
-    </Subsection>
-  )
-}
-
-const Award = props => {
-  var subtitle = ``
-  if (props.org) {
-    subtitle = `${props.date} | ${props.org}`
-  } else {
-    subtitle = `${props.date}`
-  }
-
-  return (
-    <Subsection title={props.name} subtitle={subtitle}>
-      {props.children}
-    </Subsection>
-  )
-}
-
-const List = styled.ul`
-  margin-top: 0;
-`
-const Item = styled.li`
-  margin-bottom: ${rhythm(0.2)};
-`
+import { Section, Subsection } from "../components/section"
+import Work from "../components/work"
+import Award from "../components/award"
+import { List, Item } from "../components/list"
 
 export default () => (
   <Layout>
