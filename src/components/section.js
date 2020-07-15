@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
@@ -6,7 +7,9 @@ import Pad from "./pad"
 
 const Section = props => (
   <div>
-    <h2>{props.title}</h2>
+    <Link to={props.link}>
+      <h2>{props.title}</h2>
+    </Link>
     <Pad>{props.children}</Pad>
     <hr />
   </div>
@@ -29,7 +32,9 @@ const Subsection = props => {
           margin-bottom: ${rhythm(0.5)};
         `}
       >
-        <SubHeader>{props.title}</SubHeader>
+        <Link to={props.link}>
+          <SubHeader>{props.title}</SubHeader>
+        </Link>
         <em>{props.subtitle}</em>
       </div>
       <Pad>{props.children}</Pad>
