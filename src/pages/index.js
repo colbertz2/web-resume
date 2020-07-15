@@ -23,37 +23,9 @@ export default () => (
       Etiam tincidunt nisl est, ut commodo ante egestas nec.
     </p>
 
-    <Section title="Education">
+    <Section title="Education" link="/education">
       <Subsection title="Oregon State University" aside="Corvallis, OR">
         <p>Bachelor of Science in Physics, awarded June 2020.</p>
-        <List>
-          <Item>
-            <b>Concentration</b>: Computational Physics
-          </Item>
-          <Item>
-            <b>Minor</b>: Computer Science
-          </Item>
-          <Item>
-            <b>Undergraduate thesis</b>:<br />
-            <Link href={"zc-thesis.pdf"}>
-              <em>
-                Development of a Visible-Light Photoluminescence
-                Microspectrometer
-              </em>
-            </Link>
-          </Item>
-          <Item>
-            <b>Notable courses</b>:
-            <List>
-              <Item>Computational Physics (3-course series)</Item>
-              <Item>Scientific Computing I/II</Item>
-              <Item>Operating Systems</Item>
-              <Item>Cryptography</Item>
-              <Item>Introduction to Security</Item>
-              <Item>Open Source Software</Item>
-            </List>
-          </Item>
-        </List>
       </Subsection>
     </Section>
 
