@@ -80,24 +80,16 @@ export default () => (
       />
     </Section>
 
-    <Section title="Awards and Honors">
-      {/* <p>Shiny things.</p> */}
+    <Section title="Awards and Honors" link="/awards">
+      <Award name="Eagle Scout" date="Mar 2015" org="Boy Scouts of America" />
 
-      <Award name="Eagle Scout" date="Mar 2015" org="Boy Scouts of America">
-        {/* <p>Description</p> */}
-      </Award>
-
-      <Award name="Vigil Honor" date="Jun 2017" org="Order of the Arrow, BSA">
-        {/* <p>Description</p> */}
-      </Award>
+      <Award name="Vigil Honor" date="Jun 2017" org="Order of the Arrow, BSA" />
 
       <Award
         name="Founders Award"
         date="Oct 2016"
         org="Order of the Arrow, BSA"
-      >
-        {/* <p>Description</p> */}
-      </Award>
+      />
     </Section>
 
     <Section title="Hot Takes">
