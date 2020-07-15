@@ -1,11 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import { Section, Subsection } from "../components/section"
 import Work from "../components/work"
 import Award from "../components/award"
-import { List, Item } from "../components/list"
 
 export default () => (
   <Layout>
