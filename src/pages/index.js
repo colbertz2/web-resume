@@ -59,13 +59,6 @@ export default () => (
       />
 
       <Work
-        title="Seasonal Camp Staff"
-        company="Oregon Trail Council, BSA"
-        start="Jul 2013"
-        end="Jul 2019"
-      />
-
-      <Work
         title="Administrative Adviser (Order of the Arrow)"
         company="Oregon Trail Council, BSA"
         start="Oct 2018"
