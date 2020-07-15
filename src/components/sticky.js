@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 import Title from "./title"
@@ -48,7 +49,9 @@ class Sticky extends React.Component {
   render() {
     return (
       <StickyContainer top={this.state.isTop}>
-        <StickyTitle>{this.props.author}</StickyTitle>
+        <Link to={"/"}>
+          <StickyTitle>{this.props.author}</StickyTitle>
+        </Link>
         <SocialIconSm url="https://github.com/colbertz2" />
         <SocialIconSm url="https://www.linkedin.com/in/zach-colbert" />
         <SocialIconSm url="https://twitter.com/zach_colbert" />
