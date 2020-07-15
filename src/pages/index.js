@@ -75,7 +75,7 @@ const Award = props => {
 const List = styled.ul`
   margin-top: 0;
 `
-const LItem = styled.li`
+const Item = styled.li`
   margin-bottom: ${rhythm(0.2)};
 `
 
@@ -99,13 +99,13 @@ export default () => (
       <Subsection title="Oregon State University" aside="Corvallis, OR">
         <p>Bachelor of Science in Physics, awarded June 2020.</p>
         <List>
-          <LItem>
+          <Item>
             <b>Concentration</b>: Computational Physics
-          </LItem>
-          <LItem>
+          </Item>
+          <Item>
             <b>Minor</b>: Computer Science
-          </LItem>
-          <LItem>
+          </Item>
+          <Item>
             <b>Undergraduate thesis</b>:<br />
             <Link href={"zc-thesis.pdf"}>
               <em>
@@ -113,18 +113,18 @@ export default () => (
                 Microspectrometer
               </em>
             </Link>
-          </LItem>
-          <LItem>
+          </Item>
+          <Item>
             <b>Notable courses</b>:
             <List>
-              <LItem>Computational Physics (3-course series)</LItem>
-              <LItem>Scientific Computing I/II</LItem>
-              <LItem>Operating Systems</LItem>
-              <LItem>Cryptography</LItem>
-              <LItem>Introduction to Security</LItem>
-              <LItem>Open Source Software</LItem>
+              <Item>Computational Physics (3-course series)</Item>
+              <Item>Scientific Computing I/II</Item>
+              <Item>Operating Systems</Item>
+              <Item>Cryptography</Item>
+              <Item>Introduction to Security</Item>
+              <Item>Open Source Software</Item>
             </List>
-          </LItem>
+          </Item>
         </List>
       </Subsection>
     </Section>
@@ -223,12 +223,6 @@ export default () => (
 
     <Section title="Hot Takes">
       <p>Tech things that I like and dislike.</p>
-      <table>
-        <tr>
-          <td>CLI Editor</td>
-          <td>Vim</td>
-        </tr>
-      </table>
     </Section>
   </Layout>
 )
