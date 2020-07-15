@@ -13,6 +13,7 @@ const iconSize = rhythm(1.2)
 const SocialIconSm = props => (
   <SocialIcon
     url={props.url}
+    network={props.network}
     style={{ width: iconSize, height: iconSize }}
     css={css`
       float: right;

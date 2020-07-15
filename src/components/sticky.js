@@ -52,6 +52,7 @@ class Sticky extends React.Component {
         <Link to={"/"}>
           <StickyTitle>{this.props.author}</StickyTitle>
         </Link>
+        <SocialIconSm url="/contact" network="email" />
         <SocialIconSm url="https://github.com/colbertz2" />
         <SocialIconSm url="https://www.linkedin.com/in/zach-colbert" />
         <SocialIconSm url="https://twitter.com/zach_colbert" />
