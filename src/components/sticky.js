@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { rhythm } from "../utils/typography"
 
 import Title from "./title"
 import { SocialIconSm } from "./social-icon"
