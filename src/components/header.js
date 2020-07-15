@@ -53,7 +53,7 @@ const Tagline = ({ children }) => (
 class Header extends React.Component {
   render() {
     return (
-      <HeaderContainer>
+      <HeaderContainer id="react-header">
         <Link to="/">
           <HeaderImg src={headerImg} />
           <Title>{this.props.author}</Title>

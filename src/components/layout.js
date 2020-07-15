@@ -6,6 +6,7 @@ import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 
 import Header from "../components/header"
+import Sticky from "../components/sticky"
 
 const Body = styled.div`
   margin: auto;
@@ -43,6 +44,9 @@ export default ({ children }) => {
       />
       {/* Site Body */}
       <div>
+        {/* Scrolling Header */}
+        <Sticky author={data.site.siteMetadata.author} />
+
         {/* Site Header */}
         <Header
           author={data.site.siteMetadata.author}
