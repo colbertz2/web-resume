@@ -27,34 +27,27 @@ export default () => (
       </Subsection>
     </Section>
 
-    <Section title="Work Experience">
-      <p>Things that people have paid me to do for them.</p>
+    <Section title="Work Experience" link="/work">
       <Work
         title="Lead Student IT Technician"
         company="Oregon State University"
         start="Nov 2016"
         end="July 2020"
-      >
-        <p>Description</p>
-      </Work>
+      />
 
       <Work
         title="Undergraduate Student Researcher"
         company="Oregon State University"
         start="Jun 2018"
         end="Sep 2018"
-      >
-        <p>Description</p>
-      </Work>
+      />
 
       <Work
         title="Stylist"
         company="Levi Strauss & Co."
         start="Nov 2014"
         end="Jun 2020"
-      >
-        <p>Description</p>
-      </Work>
+      />
     </Section>
 
     <Section title="Volunteer Work">
