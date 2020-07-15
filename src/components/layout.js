@@ -26,7 +26,7 @@ export default ({ children }) => {
   `)
 
   return (
-    <div>
+    <div id="react-all">
       {/* Global Styles */}
       <Global
         styles={css`

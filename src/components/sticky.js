@@ -8,7 +8,7 @@ import { SocialIconSm } from "./social-icon"
 const StickyContainer = styled.div`
   position: fixed;
   top: 0;
-  width: 70%;
+  width: ${props => props.width}px;
   margin-bottom: 0;
   text-align: left;
   background-color: #fff;
@@ -32,9 +32,18 @@ const HR = styled.hr`
 class Sticky extends React.Component {
   state = {
     isTop: true,
+    width: 0,
   }
 
   componentDidMount() {
+    var bodyWidth = document.getElementById("react-all").clientWidth
+    this.setState({ width: bodyWidth })
+
+    window.addEventListener("resize", () => {
+      var bodyWidth = document.getElementById("react-all").clientWidth
+      this.setState({ width: bodyWidth })
+    })
+
     document.addEventListener("scroll", () => {
       var bound = document
         .getElementById("react-header")
@@ -48,7 +57,7 @@ class Sticky extends React.Component {
 
   render() {
     return (
-      <StickyContainer top={this.state.isTop}>
+      <StickyContainer top={this.state.isTop} width={this.state.width}>
         <Link to={"/"}>
           <StickyTitle>{this.props.author}</StickyTitle>
         </Link>
