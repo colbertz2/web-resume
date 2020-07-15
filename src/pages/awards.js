@@ -16,7 +16,7 @@ export default () => (
       </Award>
 
       <Award
-        name="Founders Award"
+        name="Founder's Award"
         date="Oct 2016"
         org="Order of the Arrow, BSA"
       >

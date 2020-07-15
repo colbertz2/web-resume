@@ -79,7 +79,7 @@ export default () => (
       <Award name="Vigil Honor" date="Jun 2017" org="Order of the Arrow, BSA" />
 
       <Award
-        name="Founders Award"
+        name="Founder's Award"
         date="Oct 2016"
         org="Order of the Arrow, BSA"
       />
