@@ -13,7 +13,7 @@ export default () => (
         start="Jun 2019"
         end="Present"
       >
-        <p>Description</p>
+        {/* <p>Description</p> */}
       </Work>
 
       <Work
@@ -22,7 +22,7 @@ export default () => (
         start="Jul 2013"
         end="Jul 2019"
       >
-        <p>Description</p>
+        {/* <p>Description</p> */}
       </Work>
 
       <Work
@@ -31,7 +31,7 @@ export default () => (
         start="Oct 2018"
         end="Present"
       >
-        <p>Description</p>
+        {/* <p>Description</p> */}
       </Work>
 
       <Work
@@ -40,7 +40,7 @@ export default () => (
         start="Apr 2015"
         end="Present"
       >
-        <p>Description</p>
+        {/* <p>Description</p> */}
       </Work>
     </Section>
   </Layout>

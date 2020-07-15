@@ -7,7 +7,7 @@ import Award from "../components/award"
 
 export default () => (
   <Layout>
-    <p>
+    {/* <p>
       Personal statement or intro paragraph. Lorem ipsum dolor sit amet,
       consectetur adipiscing elit. Vivamus non metus et felis ornare
       sollicitudin a quis sem. Sed sed eros et nulla pulvinar euismod eu eget
@@ -19,7 +19,7 @@ export default () => (
       ultrices enim. Vivamus sit amet bibendum metus, mollis pretium nunc. Nulla
       dignissim semper lorem sit amet facilisis. Suspendisse ut augue lacus.
       Etiam tincidunt nisl est, ut commodo ante egestas nec.
-    </p>
+    </p> */}
 
     <Section title="Education" link="/education">
       <Subsection title="Oregon State University" aside="Corvallis, OR">
