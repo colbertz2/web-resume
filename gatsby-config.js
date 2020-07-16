@@ -18,5 +18,17 @@ module.exports = {
       },
     },
     "gatsby-plugin-emotion",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Zach Colbert",
+        short_name: "Zach Colbert",
+        start_url: "/",
+        background_color: "#ffffff",
+        theme_color: "#4183c4",
+        display: "standalone",
+        icon: "src/img/icon.png",
+      },
+    },
   ],
 }
