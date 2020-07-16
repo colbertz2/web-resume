@@ -19,6 +19,7 @@ const StickyContainer = styled.div`
   transition-duration: 0.5s;
   transition-delay: 0;
   transition-timing-function: ease;
+  visibility: ${props => (props.vis ? "visible" : "hidden")};
 `
 
 const StickyTitle = styled(Title)`
@@ -33,15 +34,22 @@ class Sticky extends React.Component {
   state = {
     isTop: true,
     width: 0,
+    visible: true,
   }
 
   componentDidMount() {
     var bodyWidth = document.getElementById("react-all").clientWidth
     this.setState({ width: bodyWidth })
 
+    var mobileSize = window.innerWidth < 550
+    this.setState({ visible: !mobileSize })
+
     window.addEventListener("resize", () => {
       var bodyWidth = document.getElementById("react-all").clientWidth
       this.setState({ width: bodyWidth })
+
+      var mobileSize = window.innerWidth < 550
+      this.setState({ visible: !mobileSize })
     })
 
     document.addEventListener("scroll", () => {
@@ -57,7 +65,11 @@ class Sticky extends React.Component {
 
   render() {
     return (
-      <StickyContainer top={this.state.isTop} width={this.state.width}>
+      <StickyContainer
+        top={this.state.isTop}
+        width={this.state.width}
+        vis={this.state.visible}
+      >
         <Link to={"/"}>
           <StickyTitle>{this.props.author}</StickyTitle>
         </Link>
