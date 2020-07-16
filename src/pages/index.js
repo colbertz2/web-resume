@@ -36,10 +36,10 @@ export default () => (
       />
 
       <Work
-        title="Undergraduate Student Researcher"
-        company="Oregon State University"
-        start="Jun 2018"
-        end="Sep 2018"
+        title="Resident Camp Director"
+        company="Oregon Trail Council, Boy Scouts of America"
+        start="Jun 2019"
+        end="Present"
       />
 
       <Work
@@ -52,15 +52,8 @@ export default () => (
 
     <Section title="Volunteer Work" link="/volunteer">
       <Work
-        title="Resident Camp Director"
-        company="Oregon Trail Council, BSA"
-        start="Jun 2019"
-        end="Present"
-      />
-
-      <Work
         title="Administrative Adviser (Order of the Arrow)"
-        company="Oregon Trail Council, BSA"
+        company="Oregon Trail Council, Boy Scouts of America"
         start="Oct 2018"
         end="Present"
       />
@@ -70,6 +63,13 @@ export default () => (
         company="Boy Scouts of America"
         start="Apr 2015"
         end="Present"
+      />
+
+      <Work
+        title="Seasonal Camp Staff"
+        company="Oregon Trail Council, Boy Scouts of America"
+        start="Jul 2013"
+        end="Jul 2019"
       />
     </Section>
 

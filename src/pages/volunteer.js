@@ -8,24 +8,6 @@ export default () => (
   <Layout>
     <Section title="Volunteer Work">
       <Work
-        title="Resident Camp Director"
-        company="Oregon Trail Council, BSA"
-        start="Jun 2019"
-        end="Present"
-      >
-        {/* <p>Description</p> */}
-      </Work>
-
-      <Work
-        title="Seasonal Camp Staff"
-        company="Oregon Trail Council, BSA"
-        start="Jul 2013"
-        end="Jul 2019"
-      >
-        {/* <p>Description</p> */}
-      </Work>
-
-      <Work
         title="Administrative Adviser (Order of the Arrow)"
         company="Oregon Trail Council, BSA"
         start="Oct 2018"
@@ -39,6 +21,15 @@ export default () => (
         company="Boy Scouts of America"
         start="Apr 2015"
         end="Present"
+      >
+        {/* <p>Description</p> */}
+      </Work>
+
+      <Work
+        title="Seasonal Camp Staff"
+        company="Oregon Trail Council, BSA"
+        start="Jul 2013"
+        end="Jul 2019"
       >
         {/* <p>Description</p> */}
       </Work>

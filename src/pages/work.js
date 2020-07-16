@@ -17,6 +17,15 @@ export default () => (
       </Work>
 
       <Work
+        title="Resident Camp Director"
+        company="Oregon Trail Council, BSA"
+        start="Jun 2019"
+        end="Present"
+      >
+        {/* <p>Description</p> */}
+      </Work>
+
+      <Work
         title="Undergraduate Student Researcher"
         company="Oregon State University"
         start="Jun 2018"
