@@ -73,7 +73,7 @@ export default () => (
       />
     </Section>
 
-    <Section title="Awards and Honors" link="/awards">
+    <Section title="Awards and Honors">
       <Award name="Eagle Scout" date="Mar 2015" org="Boy Scouts of America" />
 
       <Award name="Vigil Honor" date="Jun 2017" org="Order of the Arrow, BSA" />
