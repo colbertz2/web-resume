@@ -86,7 +86,7 @@ export default () => (
     </Section>
 
     <Section title="Hot Takes" link="/hot-takes">
-      <p>Tech things that I like and dislike.</p>
+      <p>Unimportant tech-related preferences.</p>
     </Section>
   </Layout>
 )
