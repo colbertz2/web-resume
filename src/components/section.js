@@ -13,6 +13,24 @@ const hover = css`
   }
 `
 
+const ReadMore = props => {
+  const ptIndex = options.baseFontSize.indexOf("pt")
+  const baseSize = parseInt(options.baseFontSize.substring(0, ptIndex))
+  const size = baseSize - 1
+
+  const Text = styled.p`
+    font-size: ${rhythm(0.8)};
+  `
+
+  return (
+    <Link to={props.link}>
+      <Text>
+        <em>Read More</em>
+      </Text>
+    </Link>
+  )
+}
+
 const Section = props => {
   const Header = styled.h2``
 
@@ -26,13 +44,7 @@ const Section = props => {
       </Link>
       <Pad>
         {props.children}
-        {props.link ? (
-          <Link to={props.link}>
-            <p>
-              <em>Read More</em>
-            </p>
-          </Link>
-        ) : null}
+        {props.link ? <ReadMore link={props.link} /> : null}
       </Pad>
       <hr />
     </div>
