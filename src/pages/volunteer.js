@@ -16,38 +16,57 @@ export default () => (
       >
         <List>
           <Item>
-            Advise youth leaders on administrative, financial, and technology
-            needs of the organization.
+            Advise and support youth leaders in meeting the administrative,
+            financial, and technology needs of the organization.
           </Item>
           <Item>
-            Guide youth leaders through annual budget planning and approval
-            sessions.
+            <b>Administration</b>
+            <List>
+              <Item>
+                Manage online event registration and membership renewal service.
+              </Item>
+              <Item>Supervise staff at event check-in.</Item>
+              <Item>
+                Administer access to member records system, cloud-based file
+                storage, websites, and social media accounts.
+              </Item>
+              <Item>
+                Provide office support for membership renewal mailings, print
+                and electronic newsletters, and print materials for events.
+              </Item>
+            </List>
           </Item>
           <Item>
-            Manage online registration service for five or more events of 85+
-            per year. Supervise staff at event check-in.
+            <b>Finance</b>
+            <List>
+              <Item>
+                Lead annual budget planning and approval sessions with youth
+                leaders.
+              </Item>
+              <Item>
+                Maintain ledger and assist youth leaders with reporting.
+              </Item>
+              <Item>
+                Collect event and membership fees, and process reimbursement
+                requests.
+              </Item>
+              <Item>
+                Coordinate with professional accountant to perform periodic
+                audits and manage the organization's assets.
+              </Item>
+            </List>
           </Item>
           <Item>
-            Administer organization websites using Wordpress and LAMP stack.
-          </Item>
-          <Item>Manage the organization's computer and printer resources.</Item>
-          <Item>
-            Administer access to member records system, cloud-based file
-            storage, websites, and social media accounts.
-          </Item>
-          <Item>
-            Track revenue and expenses throughout the year, and assist youth
-            leadership in reporting. Collect membership renewal and event
-            registration fees throughout the year, and process reimbursement
-            requests.
-          </Item>
-          <Item>
-            Coordinate with professional accountant to perform periodic audits
-            and manage the organization's assets.
-          </Item>
-          <Item>
-            Provide office support for membership renewal mailings, print and
-            electronic newsletters, fliers and handouts for events.
+            <b>Techology</b>
+            <List>
+              <Item>
+                Administer organization websites using Wordpress and LAMP stack.
+              </Item>
+              <Item>
+                Manage the organization's computer, printer, and network
+                equipment.
+              </Item>
+            </List>
           </Item>
         </List>
       </Work>
@@ -58,7 +77,18 @@ export default () => (
         start="Apr 2015"
         end="Present"
       >
-        {/* <p>Description</p> */}
+        <List>
+          <Item>
+            Teach outdoor skills including navigation, first aid, camping.
+          </Item>
+          <Item>
+            Supervise scouts at weekly meetings and outdoor activities.
+          </Item>
+          <Item>
+            Ensure compliance with national policies for safe activities and
+            abuse prevention.
+          </Item>
+        </List>
       </Work>
 
       <Work
@@ -67,7 +97,19 @@ export default () => (
         start="Jul 2013"
         end="Jul 2019"
       >
-        {/* <p>Description</p> */}
+        <List>
+          <Item>
+            Lead activities including: hiking, mountaineering, climbing, and
+            rappelling.
+          </Item>
+          <Item>
+            Ensure the safety of participants and staff during activities in and
+            out of camp.
+          </Item>
+          <Item>
+            Perform basic facilities and trail maintenance in camp as necessary.
+          </Item>
+        </List>
       </Work>
     </Section>
   </Layout>
