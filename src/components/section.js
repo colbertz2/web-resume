@@ -24,7 +24,16 @@ const Section = props => {
           {/* <Chevron /> */}
         </Header>
       </Link>
-      <Pad>{props.children}</Pad>
+      <Pad>
+        {props.children}
+        {props.link ? (
+          <Link to={props.link}>
+            <p>
+              <em>Read More</em>
+            </p>
+          </Link>
+        ) : null}
+      </Pad>
       <hr />
     </div>
   )
