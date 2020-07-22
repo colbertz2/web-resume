@@ -12,7 +12,7 @@ ht["Operating System"] = "Manjaro Linux"
 ht["Phone"] = "iPhone (sorry, not sorry)"
 ht["VCS"] = "Git"
 ht["Programming Language"] = "C (and Python too!)"
-ht["Shell Language"] = "Zsh **"
+ht["Shell"] = "Zsh **"
 
 export default () => (
   <Layout>
