@@ -51,6 +51,20 @@ const Tagline = ({ children }) => (
 )
 
 class Header extends React.Component {
+  state = {
+    visible: true,
+  }
+
+  componentDidMount() {
+    var windowTooSmall = window.innerWidth < 300
+    this.setState({ visible: !windowTooSmall })
+
+    window.addEventListener("resize", () => {
+      var windowTooSmall = window.innerWidth < 300
+      this.setState({ visible: !windowTooSmall })
+    })
+  }
+
   render() {
     return (
       <HeaderContainer id="react-header">
@@ -59,10 +73,14 @@ class Header extends React.Component {
           <Title>{this.props.author}</Title>
         </Link>
         <Tagline>{this.props.tagline}</Tagline>
-        <SocialIconLg url="https://twitter.com/zach_colbert" />
-        <SocialIconLg url="https://www.linkedin.com/in/zach-colbert" />
-        <SocialIconLg url="https://github.com/colbertz2" />
-        <SocialIconLg url="/contact" network="email" />
+        {this.state.visible
+          ? [
+              <SocialIconLg url="https://twitter.com/zach_colbert" />,
+              <SocialIconLg url="https://www.linkedin.com/in/zach-colbert" />,
+              <SocialIconLg url="https://github.com/colbertz2" />,
+              <SocialIconLg url="/contact" network="email" />,
+            ]
+          : null}
         <hr />
       </HeaderContainer>
     )
