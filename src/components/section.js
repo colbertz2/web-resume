@@ -5,22 +5,50 @@ import styled from "@emotion/styled"
 import { options, rhythm } from "../utils/typography"
 import Pad from "./pad"
 
+import chevron from "../img/chevron.png"
+
+const Chevron = () => (
+  <img
+    src={chevron}
+    alt=""
+    css={css`
+      float: right;
+      width: ${rhythm(0.6)};
+    `}
+  />
+)
+
 const hover = css`
+  text-decoration: underline;
+  text-decoration-color: ${options.headerColor};
   &:hover {
-    text-decoration: underline;
-    text-decoration-color: ${options.headerColor};
+    text-decoration: none;
+    // text-decoration-color: ${options.headerColor};
   }
 `
 
-const Section = props => (
-  <div>
-    <Link to={props.link} css={props.link ? hover : null}>
-      <h2>{props.title}</h2>
-    </Link>
-    <Pad>{props.children}</Pad>
-    <hr />
-  </div>
-)
+const Section = props => {
+  const Header = styled.h2`
+    &:after {
+      width: 50%;
+      content: " ";
+      background: url(${chevron}) no-repeat left center;
+    }
+  `
+
+  return (
+    <div>
+      <Link to={props.link} css={props.link ? hover : null}>
+        <Header>
+          {props.title}
+          {/* <Chevron /> */}
+        </Header>
+      </Link>
+      <Pad>{props.children}</Pad>
+      <hr />
+    </div>
+  )
+}
 
 const Subsection = props => {
   const SubHeader = styled.h3`
