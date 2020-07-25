@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import { Link } from "gatsby"
 
 export default () => (
   <Layout>
@@ -13,9 +14,13 @@ export default () => (
       </tr>
       <tr>
         <td>
-          <b>GPG Key</b>
+          <b>PGP Key</b>
         </td>
-        <td>Coming soon</td>
+        <td>
+          <Link to="/zcolbert-pgp.asc">
+            B627 DBC9 C46A 1470 385E 098A 8BE8 EBCA 4CE2 FDE6
+          </Link>
+        </td>
       </tr>
       <tr>
         <td>
