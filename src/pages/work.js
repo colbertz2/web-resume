@@ -53,7 +53,7 @@ export default () => (
           </Item>
           <Item>
             Set policies to ensure camp-wide compliance with National Camp
-            Assessment Program standards set by the BSA.
+            Accreditation Program standards set by the BSA.
           </Item>
         </List>
       </Work>
