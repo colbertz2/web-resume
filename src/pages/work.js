@@ -17,7 +17,7 @@ export default () => (
         <List>
           <Item>
             Provide high-quality remote, walk-up, and on-site desktop support
-            for an enterprise customer base.
+            for an enterprise customer base of tens of thousands of users.
           </Item>
           <Item>
             Mentor student staff by providing actionable feedback and teaching
@@ -28,8 +28,12 @@ export default () => (
             Microsoft Exchange 2010.
           </Item>
           <Item>
-            Manage macOS endpoints with Jamf Pro. Assist with building software
-            packages and configuration profiles.
+            Maintain and contribute to a private repository of PowerShell tools
+            using Git and GitHub.
+          </Item>
+          <Item>
+            Deploy software packages and configuration profiles to macOS
+            endpoints with Jamf Pro.
           </Item>
         </List>
       </Work>
