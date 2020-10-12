@@ -79,6 +79,7 @@ class Header extends React.Component {
               <SocialIconLg url="https://www.linkedin.com/in/zach-colbert" />,
               <SocialIconLg url="https://github.com/colbertz2" />,
               <SocialIconLg url="/contact" network="email" />,
+              <SocialIconLg url="https://blog.zcolbert.com" />,
             ]
           : null}
         <hr />

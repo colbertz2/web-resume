@@ -46,6 +46,14 @@ export default () => (
           <a href="https://github.com/colbertz2">colbertz2</a>
         </td>
       </tr>
+      <tr>
+        <td>
+          <b>Blog</b>
+        </td>
+        <td>
+          <a href="https://blog.zcolbert.com">blog.zcolbert.com</a>
+        </td>
+      </tr>
     </table>
   </Layout>
 )
