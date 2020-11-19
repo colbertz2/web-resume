@@ -17,7 +17,8 @@ export default () => (
         <List>
           <Item>
             Provide high-quality remote, walk-up, and on-site desktop support
-            for an enterprise customer base of tens of thousands of users.
+            for an enterprise customer base of tens of thousands of users on 
+    		both Windows and MacOS devices.
           </Item>
           <Item>
             Mentor student staff by providing actionable feedback and teaching
