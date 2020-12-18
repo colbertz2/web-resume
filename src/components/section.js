@@ -14,9 +14,9 @@ const hover = css`
 `
 
 const ReadMore = props => {
-  const ptIndex = options.baseFontSize.indexOf("pt")
-  const baseSize = parseInt(options.baseFontSize.substring(0, ptIndex))
-  const size = baseSize - 1
+  // const ptIndex = options.baseFontSize.indexOf("pt")
+  // const baseSize = parseInt(options.baseFontSize.substring(0, ptIndex))
+  // const size = baseSize - 1
 
   const Text = styled.p`
     font-size: ${rhythm(0.8)};
