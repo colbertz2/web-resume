@@ -84,9 +84,5 @@ export default () => (
         org="Order of the Arrow, BSA"
       />
     </Section>
-
-    <Section title="Hot Takes" link="/hot-takes">
-      <p>Unimportant tech-related preferences.</p>
-    </Section>
   </Layout>
 )
