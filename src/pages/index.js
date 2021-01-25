@@ -29,6 +29,13 @@ export default () => (
 
     <Section title="Work Experience" link="/work">
       <Work
+        title="Counseling Analyst"
+        company="Sidekick Education"
+        start="Jan 2021"
+        end="Present"
+      />
+
+      <Work
         title="Lead Student IT Technician"
         company="Oregon State University"
         start="Nov 2016"

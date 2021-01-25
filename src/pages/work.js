@@ -9,6 +9,22 @@ export default () => (
   <Layout>
     <Section title="Work Experience">
       <Work
+        title="Counseling Analyst"
+        company="Sidekick Education"
+        start="Jan 2021"
+        end="Present"
+      >
+        <List>
+          <Item>
+            Interview students about their career aspirations, skills, interests, and experience via SMS chat.
+          </Item>
+          <Item>
+            Build automation in Salesforce to support chat agents with Lightning Experience.
+          </Item>
+        </List>
+      </Work>
+
+      <Work
         title="Lead Student IT Technician"
         company="Oregon State University"
         start="Nov 2016"
@@ -17,8 +33,8 @@ export default () => (
         <List>
           <Item>
             Provide high-quality remote, walk-up, and on-site desktop support
-            for an enterprise customer base of tens of thousands of users on 
-    		both Windows and MacOS devices.
+            for an enterprise customer base of tens of thousands of users on
+            both Windows and MacOS devices.
           </Item>
           <Item>
             Mentor student staff by providing actionable feedback and teaching
