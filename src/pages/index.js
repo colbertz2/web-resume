@@ -29,10 +29,17 @@ export default () => (
 
     <Section title="Work Experience" link="/work">
       <Work
-        title="Counseling Analyst"
-        company="Sidekick Education"
-        start="Jan 2021"
+        title="IT Technician"
+        company="TEC Equipment"
+        start="April 2021"
         end="Present"
+      />
+
+      <Work
+        title="Information Technology Consultant"
+        company="TEKsystems"
+        start="February 2021"
+        end="April 2021"
       />
 
       <Work
@@ -47,13 +54,6 @@ export default () => (
         company="Oregon Trail Council, Boy Scouts of America"
         start="Jun 2019"
         end="Present"
-      />
-
-      <Work
-        title="Stylist"
-        company="Levi Strauss & Co."
-        start="Nov 2014"
-        end="Jun 2020"
       />
     </Section>
 
