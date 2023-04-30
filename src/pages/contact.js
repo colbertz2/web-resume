@@ -22,14 +22,14 @@ export default () => (
           </Link>
         </td>
       </tr> */}
-      <tr>
+      {/* <tr>
         <td>
           <b>Twitter</b>
         </td>
         <td>
           <a href="https://twitter.com/zach_colbert">@zach_colbert</a>
         </td>
-      </tr>
+      </tr> */}
       <tr>
         <td>
           <b>LinkedIn</b>
@@ -46,14 +46,14 @@ export default () => (
           <a href="https://github.com/colbertz2">colbertz2</a>
         </td>
       </tr>
-      <tr>
+      {/* <tr>
         <td>
           <b>Blog</b>
         </td>
         <td>
           <a href="https://blog.zcolbert.com">blog.zcolbert.com</a>
         </td>
-      </tr>
+      </tr> */}
     </table>
   </Layout>
 )

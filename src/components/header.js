@@ -75,10 +75,10 @@ class Header extends React.Component {
         <Tagline>{this.props.tagline}</Tagline>
         {this.state.visible
           ? [
-              <SocialIconLg
-                url="https://twitter.com/zach_colbert"
-                label="Twitter"
-              />,
+              // <SocialIconLg
+              //   url="https://twitter.com/zach_colbert"
+              //   label="Twitter"
+              // />,
               <SocialIconLg
                 url="https://www.linkedin.com/in/zach-colbert"
                 label="LinkedIn"
@@ -88,7 +88,7 @@ class Header extends React.Component {
                 label="GitHub"
               />,
               <SocialIconLg url="/contact" network="email" label="Contact" />,
-              <SocialIconLg url="https://blog.zcolbert.com" label="Blog" />,
+              // <SocialIconLg url="https://blog.zcolbert.com" label="Blog" />,
             ]
           : null}
         <hr />
