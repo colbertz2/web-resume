@@ -12,7 +12,7 @@ export default () => (
         </td>
         <td>zach.colbert20 AT gmail.com</td>
       </tr>
-      <tr>
+      {/* <tr>
         <td>
           <b>PGP Key</b>
         </td>
@@ -21,7 +21,7 @@ export default () => (
             B627 DBC9 C46A 1470 385E 098A 8BE8 EBCA 4CE2 FDE6
           </Link>
         </td>
-      </tr>
+      </tr> */}
       <tr>
         <td>
           <b>Twitter</b>
