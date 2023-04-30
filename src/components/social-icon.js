@@ -2,7 +2,7 @@ import React from "react"
 import { SocialIcon } from "react-social-icons"
 import { rhythm } from "../utils/typography"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 
 const LgStyle = styled(SocialIcon)`
   margin: 5px ${rhythm(1)};

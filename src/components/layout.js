@@ -1,7 +1,7 @@
 // Default page layout wrapper
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Global, css } from "@emotion/core"
+import { Global, css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { rhythm } from "../utils/typography"
 
