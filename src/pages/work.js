@@ -9,12 +9,38 @@ export default () => (
   <Layout>
     <Section title="Work Experience">
       <Work
+        title="Desktop Technician"
+        company="Sigma Design, Inc."
+        start="Sept 2021"
+        end="Present"
+      >
+        <List>
+          <Item>Desktop deployments lead.</Item>
+          <Item>IT asset management and disposition lead.</Item>
+          <Item>Employee IT onboarding/offboarding.</Item>
+          <Item>Desktop support and administration.</Item>
+          <Item>Desktop vulnerability management.</Item>
+          <Item>Network support.</Item>
+          <Item>A/V support and meeting facilitation.</Item>
+        </List>
+      </Work>
+      
+      <Work
         title="IT Technician"
         company="TEC Equipment"
         start="April 2021"
         end="Present"
       >
+        <List>
+          <Item>Desktop support for main campus and remote sites.</Item>
+          <Item>Desktop deployments.</Item>
+          <Item>Mobile device deployment and MDM.</Item>
+          <Item>Exchange Online, Microsoft 365 administration.</Item>
+          <Item>IT onboarding/offboarding.</Item>
+          <Item>Application support for Volvo, Mack, Prevost, and other diesel technician softwares.</Item>
+        </List>
       </Work>
+
       <Work
         title="Information Technology Consultant"
         company="TEKsystems"

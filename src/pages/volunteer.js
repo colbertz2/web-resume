@@ -12,7 +12,7 @@ export default () => (
         title="Administrative Adviser (Order of the Arrow)"
         company="Oregon Trail Council, BSA"
         start="Oct 2018"
-        end="Present"
+        end="Feb 2021"
       >
         <List>
           <Item>
@@ -75,7 +75,7 @@ export default () => (
         title="Assistant Scoutmaster"
         company="Boy Scouts of America"
         start="Apr 2015"
-        end="Present"
+        end="Feb 2021"
       >
         <List>
           <Item>

@@ -20,7 +20,7 @@ export default () => (
           <b>Email</b>
         </td>
         <td>
-          zcolbert AT sectionw1s.org
+          zcolbert AT sectiong16.org
         </td>
       </tr>
     </table>
