@@ -3,9 +3,28 @@ import React from "react"
 import Layout from "../components/layout"
 import { Section, Subsection } from "../components/section"
 import Work from "../components/work"
+import { List, Item } from "../components/list"
 
 export default () => (
   <Layout>
+    <Section title="Skills and Technologies">
+      <List>
+        <Item>Windows Desktop Administration and Deployment</Item>
+        <Item>Windows Powershell</Item>
+        <Item>Microsoft Endpoint Configuration Manager</Item>
+        <Item>Microsoft Exchange</Item>
+        <Item>Active Directory</Item>
+        <Item>Microsoft Office</Item>
+        <Item>Microsoft User State Migration Tool</Item>
+        <Item>Desktop/Laptop Hardware</Item>
+        <Item>Linux</Item>
+        <Item>MacOS</Item>
+        <Item>Git</Item>
+        <Item>Python</Item>
+        <Item>C / C++</Item>
+      </List>
+    </Section>
+    
     <Section title="Work Experience" link="/work">
       <Work
         title="Desktop Technician"
