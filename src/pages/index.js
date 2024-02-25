@@ -41,22 +41,22 @@ export default () => (
       <Work
         title="Junior Systems Administrator"
         company="Sigma Design, Inc."
-        start="Jan 2024"
+        start="January 2024"
         end="Present"
       />
       
       <Work
         title="Desktop Technician"
         company="Sigma Design, Inc."
-        start="Sept 2021"
-        end="Jan 2024"
+        start="September 2021"
+        end="January 2024"
       />
 
       <Work
         title="IT Technician"
         company="TEC Equipment"
         start="April 2021"
-        end="Sept 2021"
+        end="September 2021"
       />
 
       <Work
@@ -69,7 +69,7 @@ export default () => (
       <Work
         title="Lead Student IT Technician"
         company="Oregon State University"
-        start="Nov 2016"
+        start="November 2016"
         end="July 2020"
       />
     </Section>
@@ -83,7 +83,7 @@ export default () => (
     <Section title="Volunteer Work" link="/volunteer">
       <Work
         title="Cascade AIDS Project"
-        start="Apr 2022"
+        start="April 2022"
         end="Present"
       />
     </Section>
@@ -91,7 +91,7 @@ export default () => (
     <Section title="Awards and Honors" link="/awards">
       <Award
         name="Eagle Scout"
-        date="Mar 2015"
+        date="March 2015"
       />
     </Section>
   </Layout>

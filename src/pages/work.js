@@ -11,7 +11,7 @@ export default () => (
       <Work
         title="Junior Systems Administrator"
         company="Sigma Design, Inc."
-        start="Jan 2024"
+        start="January 2024"
         end="Present"
       >
         <List>
@@ -30,8 +30,8 @@ export default () => (
       <Work
         title="Desktop Technician"
         company="Sigma Design, Inc."
-        start="Sept 2021"
-        end="Jan 2024"
+        start="September 2021"
+        end="January 2024"
       >
         <List>
           <Item>Desktop deployments lead.</Item>
@@ -76,7 +76,7 @@ export default () => (
       <Work
         title="Counseling Analyst"
         company="Sidekick Education"
-        start="Jan 2021"
+        start="January 2021"
         end="February 2021"
       >
         <List>
@@ -92,7 +92,7 @@ export default () => (
       <Work
         title="Lead Student IT Technician"
         company="Oregon State University"
-        start="Nov 2016"
+        start="November 2016"
         end="July 2020"
       >
         <List>
@@ -123,7 +123,7 @@ export default () => (
       <Work
         title="Resident Camp Director"
         company="Oregon Trail Council, BSA"
-        start="Jun 2019"
+        start="June 2019"
         end="Present"
       >
         <List>
@@ -147,8 +147,8 @@ export default () => (
       <Work
         title="Undergraduate Student Researcher"
         company="Oregon State University"
-        start="Jun 2018"
-        end="Sep 2018"
+        start="June 2018"
+        end="September 2018"
       >
         <List>
           <Item>Set research goals for senior thesis project.</Item>
@@ -168,8 +168,8 @@ export default () => (
       <Work
         title="Stylist"
         company="Levi Strauss & Co."
-        start="Nov 2014"
-        end="Jun 2020"
+        start="November 2014"
+        end="June 2020"
       >
         <List>
           <Item>

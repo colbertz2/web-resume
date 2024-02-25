@@ -24,8 +24,8 @@ export default () => (
       <Work
         title="Administrative Adviser (Order of the Arrow)"
         company="Oregon Trail Council, BSA"
-        start="Oct 2018"
-        end="Feb 2021"
+        start="October 2018"
+        end="February 2021"
       >
         <List>
           <Item>
@@ -87,8 +87,8 @@ export default () => (
       <Work
         title="Assistant Scoutmaster"
         company="Boy Scouts of America"
-        start="Apr 2015"
-        end="Feb 2021"
+        start="April 2015"
+        end="February 2021"
       >
         <List>
           <Item>
@@ -107,8 +107,8 @@ export default () => (
       <Work
         title="Seasonal Camp Staff"
         company="Oregon Trail Council, BSA"
-        start="Jul 2013"
-        end="Jul 2019"
+        start="July 2013"
+        end="July 2019"
       >
         <List>
           <Item>
