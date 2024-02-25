@@ -9,6 +9,19 @@ export default () => (
   <Layout>
     <Section title="Volunteer Work">
       <Work
+        title="Cascade AIDS Project"
+        // company="Cascade AIDS Project"
+        start="April 2022"
+        end="Present"
+      >
+        <List>
+          <Item>Weekly volunteer, sorting donations at Tod's Corner.</Item>
+          <Item>Registration helper at annual Art Auction fundraiser.</Item>
+          <Item>Route monitor at AIDS Walk NW.</Item>
+        </List>
+      </Work>
+
+      <Work
         title="Administrative Adviser (Order of the Arrow)"
         company="Oregon Trail Council, BSA"
         start="Oct 2018"

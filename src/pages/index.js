@@ -3,34 +3,53 @@ import React from "react"
 import Layout from "../components/layout"
 import { Section, Subsection } from "../components/section"
 import Work from "../components/work"
+import Award from "../components/award"
 import { List, Item } from "../components/list"
 
 export default () => (
   <Layout>
     <Section title="Skills and Technologies">
-      <List>
-        <Item>Windows Desktop Administration and Deployment</Item>
-        <Item>Windows Powershell</Item>
-        <Item>Microsoft Endpoint Configuration Manager</Item>
-        <Item>Microsoft Exchange</Item>
-        <Item>Active Directory</Item>
-        <Item>Microsoft Office</Item>
-        <Item>Microsoft User State Migration Tool</Item>
-        <Item>Desktop/Laptop Hardware</Item>
-        <Item>Linux</Item>
-        <Item>MacOS</Item>
-        <Item>Git</Item>
-        <Item>Python</Item>
-        <Item>C / C++</Item>
-      </List>
+      <Subsection title="Information Technology">
+        <List>
+          <Item>Windows Administration and Deployment</Item>
+          <Item>Windows Powershell</Item>
+          <Item>Microsoft Endpoint Manager</Item>
+          <Item>Microsoft Exchange</Item>
+          <Item>Active Directory</Item>
+          <Item>Desktop/Laptop Hardware</Item>
+          <Item>Network Administration</Item>
+          <Item>Linux Administration</Item>
+        </List>
+      </Subsection>
+      <Subsection title="Software Development">
+        <List>
+          <Item>Git</Item>
+          <Item>Python</Item>
+          <Item>C / C++</Item>
+        </List>
+      </Subsection>
+      <Subsection title="Other">
+        <List>
+          <Item>Good at tying knots</Item>
+          <Item>Mandolin owner</Item>
+          <Item>Loves dogs</Item>
+        </List>
+      </Subsection>
     </Section>
     
     <Section title="Work Experience" link="/work">
       <Work
+        title="Junior Systems Administrator"
+        company="Sigma Design, Inc."
+        start="Jan 2024"
+        end="Present"
+      />
+      
+      <Work
         title="Desktop Technician"
         company="Sigma Design, Inc."
         start="Sept 2021"
-        end="Present"
+        end="Jan 2024"
       />
 
       <Work
@@ -53,13 +72,6 @@ export default () => (
         start="Nov 2016"
         end="July 2020"
       />
-
-      <Work
-        title="Resident Camp Director"
-        company="Oregon Trail Council, Boy Scouts of America"
-        start="Jun 2019"
-        end="Feb 2021"
-      />
     </Section>
 
     <Section title="Education" link="/education">
@@ -68,8 +80,19 @@ export default () => (
       </Subsection>
     </Section>
 
-    <Section title="Volunteer Work" link="/volunteer"></Section>
+    <Section title="Volunteer Work" link="/volunteer">
+      <Work
+        title="Cascade AIDS Project"
+        start="Apr 2022"
+        end="Present"
+      />
+    </Section>
 
-    <Section title="Awards and Honors" link="/awards"></Section>
+    <Section title="Awards and Honors" link="/awards">
+      <Award
+        name="Eagle Scout"
+        date="Mar 2015"
+      />
+    </Section>
   </Layout>
 )

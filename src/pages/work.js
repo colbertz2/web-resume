@@ -9,10 +9,29 @@ export default () => (
   <Layout>
     <Section title="Work Experience">
       <Work
+        title="Junior Systems Administrator"
+        company="Sigma Design, Inc."
+        start="Jan 2024"
+        end="Present"
+      >
+        <List>
+          <Item>Desktop deployment, support, and administration</Item>
+          <Item>Microsoft Endpoint Manager SME</Item>
+          <Item>IT onboarding/offboarding</Item>
+          <Item>Network support and administration</Item>
+          <Item>Windows and Linux server administration</Item>
+          <Item>Print management</Item>
+          <Item>Renewer of certificates</Item>
+          <Item>PowerShell wiz kid</Item>
+          <Item>Printer of many labels</Item>
+        </List>
+      </Work>
+
+      <Work
         title="Desktop Technician"
         company="Sigma Design, Inc."
         start="Sept 2021"
-        end="Present"
+        end="Jan 2024"
       >
         <List>
           <Item>Desktop deployments lead.</Item>
