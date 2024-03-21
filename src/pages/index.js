@@ -39,7 +39,7 @@ export default () => (
     
     <Section title="Work Experience" link="/work">
       <Work
-        title="Junior Systems Administrator"
+        title="Systems Administrator"
         company="Sigma Design, Inc."
         start="January 2024"
         end="Present"

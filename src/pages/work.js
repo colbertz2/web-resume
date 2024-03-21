@@ -9,9 +9,9 @@ export default () => (
   <Layout>
     <Section title="Work Experience">
       <Work
-        title="Junior Systems Administrator"
+        title="Systems Administrator"
         company="Sigma Design, Inc."
-        start="January 2024"
+        start="March 2024"
         end="Present"
       >
         <List>
@@ -26,6 +26,13 @@ export default () => (
           <Item>Printer of many labels</Item>
         </List>
       </Work>
+
+      <Work
+        title="Junior Systems Administrator"
+        company="Sigma Design, Inc."
+        start="January 2024"
+        end="March 2024"
+      />
 
       <Work
         title="Desktop Technician"
